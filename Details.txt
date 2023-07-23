@@ -80,5 +80,38 @@ Task:
 Next Session:
   use of important
 
+Solution for the 5 Question in Countries filteration Task:
+
+Approach 1:
+const xhr = new XMLHttpRequest();
+
+xhr.open('GET', 'https://restcountries.com/v3.1/all');
+
+xhr.onload = function () {
+  const countries = JSON.parse(xhr.responseText);
+  console.log(countries.filter((country) => {
+      if (country.currencies !== undefined) {
+          return Object.keys(country.currencies).includes('USD');
+      }
+      return false;
+  }))
+
+}
+
+xhr.send()
+
+Approach 2: ( undefined check by passing empty object to Object.keys function) 
+const xhr = new XMLHttpRequest();
+
+xhr.open('GET', 'https://restcountries.com/v3.1/all');
+
+xhr.onload = function () {
+  const countries = JSON.parse(xhr.responseText);
+  console.log(countries.filter((country) => Object.keys(country.currencies || {}).includes('USD')))
+}
+
+xhr.send()
+
+
 
   
