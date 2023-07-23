@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+
+
+  <!-- internal styling -->
+  <style>
+    h4 {
+      color: yellowgreen;
+      font-style: italic;
+      text-decoration: line-through;
+    }
+
+    #sample-header {
+      color: violet;
+      font-size: larger;
+      font-style: italic;
+    }
+
+    h3 {
+      font-style: italic;
+    }
+
+    #redColor {
+      color: red;
+    }
+
+    #blueColor {
+      color: blue;
+    }
+
+    #orangeColor {
+      color: orange;
+    }
+
+
+    /* . for class */
+    .bgGreen {
+      background-color: greenyellow;
+    }
+
+    table {
+      border: 1px solid;
+      border-collapse: collapse;
+      text-align: center;
+    }
+
+    /* tr {
+      border: 1px solid;
+    }
+
+    th {
+      border: 1px solid;
+    }
+
+    td {
+      border: 1px solid;
+    } */
+
+    tr,
+    td,
+    th {
+      border: 1px solid;
+      text-align: center;
+    }
+  </style>
+
+  <!-- External Styling -->
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <!-- Inline Elements -->
+  <span>B49WEENG</span><br />
+  <b>B49WEENG</b>
+  <a href="https://google.com" target="_blank">B49WEENG</a>
+
+
+  <!-- Block Elements -->
+  <div class="bgGreen">B49WEENG</div>
+  <h1 class="bgGreen">B49WEENG</h1>
+  <p class="bgGreen">B49WEENG</p>
+
+  <br />
+
+  <hr />
+
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="2" rowspan="2">Sam</td>
+        <td>45</td>
+        <td colspan="5">Male</td>
+      </tr>
+      <tr>
+        <td>Lissa</td>
+        <td>40</td>
+        <td>Female</td>
+      </tr>
+    </tbody>
+  </table>
+  <br />
+  Grocery
+  <ul style="list-style-type: circle;">
+    <li>Coffee
+      <ol type="i">
+        <li>Expresso</li>
+        <li>Latte</li>
+      </ol>
+    </li>
+    <li>Tea</li>
+    <li>Sugar</li>
+  </ul>
+  <br />
+  Grocery
+  <ol type="i" style="list-style-type: decimal-leading-zero;">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Sugar</li>
+  </ol>
+
+  <button onclick="alert('Cliked Me')">Click Me to See Something</button>
+
+  <input type="text" onchange="alert('You changed Me')" />
+
+  <div onmouseover="alert('Your over Me')">
+    SAMPLE DIV TESTING THE EVENT
+  </div>
+
+  <form onsubmit="alert('Hey You have submitted the form')" onreset="alert('Hey Your resting')">
+    <label for="fname">Name</label>
+    <input type="text" value="Sanjay" id="fname" name="fname" required />
+    <input type="number" value="1234567" />
+    <input type="date" value="2023-01-01" />
+    <input type="month" />
+    <input type="color" />
+    <input type="tel" />
+    <input type="file" />
+    <input type="password" name="password" />
+    <input type="email" />
+    <textarea placeholder="Please enter the address"></textarea>
+
+    <!-- Grouping of the input tags using the name attribute -->
+    <!-- Gender Input -->
+    <label>Gender</label>
+
+    <label for="male">Male</label>
+    <input type="radio" id="male" name="gender" />
+    <label for="female">Female</label>
+    <input type="radio" id="female" name="gender" checked />
+    <br />
+
+    <label>Id Proofs You have</label>
+
+    <label for="aadhar">Aadhar</label>
+    <input type="checkbox" id="aadhar" name="idProofs" />
+    <label for="pan">Pan</label>
+    <input type="checkbox" id="pan" name="idProofs" />
+    <label for="voter">Voter</label>
+    <input type="checkbox" id="voter" name="idProofs" />
+    <label for="dl">Driving License</label>
+    <input type="checkbox" id="dl" name="idProofs" />
+    <br />
+    <label for="location">Location</label>
+    <select id="location" name="location">
+      <option value="">--</option>
+      <option value="india">India</option>
+      <option value="china">China</option>
+      <option value="korea">Korea</option>
+      <option value="US">United of states America</option>
+      <option value="russia">Russia</option>
+    </select>
+
+    <label for="city">City</label>
+    <select id="city" name="city">
+      <option value="">--</option>
+      <optgroup label="Tamil Nadu">
+        <option value="chennai">Chennai</option>
+        <option value="trichy">Trichy</option>
+        <option value="madurai">Madurai</option>
+      </optgroup>
+      <optgroup label="Delhi">
+        <option value="agra">Agra</option>
+        <option value="noida">Noida</option>
+        <option value="gurugram">Gurugram</option>
+      </optgroup>
+    </select>
+
+
+    <input type="submit" />
+    <input type="reset" />
+
+  </form>
+
+
+
+
+  <h1>CSS Styling</h1>
+  <p style="color: green; font-size: 64px;">Some text to demonstrate the styling</p>
+  <a href="https://zenclass.in" style="color: red; font-size: larger;">Click To The Link</a>
+
+  <h3 id="redColor">B49WENG in red</h3>
+  <h3 id="blueColor">Sanjay in blue</h3>
+  <h3 id="orangeColor">Zenclass in orange</h3>
+
+  <h4>B49WEENG</h4>
+
+  <h6>B49WEENG</h6>
+
+  <img src="Sample-png-image-500kb.png" alt="sample" style="height: 500px; width: 1000px" />
+
+
+  <h5 id="sample-header">Sample test styling using id attribute</h5>
+
+  <!-- Dropdown -->
+  <div style="display: inline;">DIV ONE</div>
+  <b>SAM</b>
+
+  <span style="display: block;">SPAN ONE</span><b>SAM PAN</b>
+
+
+
+
+
+</body>
+
+</html>

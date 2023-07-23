@@ -1,0 +1,84 @@
+Topics:
+  inline vs block elements
+
+  inline:
+    inline elements are the ones which consumes only the need width/space
+    Eg: span, b, a
+
+  block:
+    Block elements are the ones which consume 100% width of the parent element
+    Eg: div, heading, p
+
+    div vs span:
+
+      div: block element ( acts like a container to hold the child elements)
+      span: inline element ( this also acts like a container, but used minor small elements of a site)
+
+  div vs header/section/article ( semantic tags ):
+    header/section/article: has a special meaning to it to let the browser know that we are using a header/section/article here
+
+    div: doesn't have a special meaning to it
+
+  <br /> --> line break
+  <hr /> --> 
+  table  --> rows & columns
+
+  list --> to list down things we use the list
+
+  Unordered list, ordered list
+  nested list
+
+  HTML Forms
+    name, id is a must attributes for the input form elements
+    Input elements and attributes
+      radio
+      checkbox
+      text
+      date
+      textarea
+      submit
+      reset
+      
+    Form submit
+
+  Events:
+    click, change, onmouseover, onsubmit ( form action )
+
+  CSS
+    What is css?
+      Cascading Style Sheet used style the html element
+
+    ways to use css:
+      1. inline styling ---> using the style attribute of an html element
+      2. style tag in head section
+      3. External styling --> using the external css with link in head
+
+    property & value:
+      property: pre-defined css props with pre-defined range of values which helps styling an html element
+
+    Styling an html tag using class and id:
+
+      there are two attributes helps in identifying a tag/element in html
+        id:
+          define using # symbol
+          id is used to identify and style a single unique tag/element
+          **one single id should be used only for one single tag/element**
+
+        class:
+          defined using . symbol
+          used to identify and style a group of tags/elements
+
+    display property: inline, block
+
+    table
+    
+    list-style-type for ordered and undordered:
+
+Task:
+  https://github.com/rvsp/HTML-CSS/blob/master/Mini-tasks/001-HTML.md
+
+Next Session:
+  use of important
+
+
+  
