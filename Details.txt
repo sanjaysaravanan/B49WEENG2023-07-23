@@ -14,7 +14,7 @@ Topics:
       div: block element ( acts like a container to hold the child elements)
       span: inline element ( this also acts like a container, but used minor small elements of a site)
 
-  div vs header/section/article ( semantic tags ):
+  div vs header/section/article( semantic tags ):
     header/section/article: has a special meaning to it to let the browser know that we are using a header/section/article here
 
     div: doesn't have a special meaning to it
